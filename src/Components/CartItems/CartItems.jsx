@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+
 import "./CartItems.css";
 import cross_icon from "../Assets/cart_cross_icon.png";
 import { useSelector, useDispatch } from 'react-redux';
@@ -7,10 +7,10 @@ import all_product from "../Assets/all_product";
 const CartItems = () => {
   const dispatch = useDispatch();
 
-  // Fetch products from Redux store state
+  
   const cartItems = useSelector((state) => state.shop.cartItems);
 
-  // Function to calculate total cart amount
+ 
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
@@ -25,7 +25,7 @@ const CartItems = () => {
     return totalAmount;
   };
 
-  // Example: Fetch products when component mounts (useEffect)
+ 
  
   return (
     <div className="cartitems">

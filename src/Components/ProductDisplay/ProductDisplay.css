@@ -3,6 +3,7 @@
     padding: 0px 10%;
     gap: 40px;
     justify-content: space-between;
+    margin-top: 50px;
 }
 .productdisplay-left{
     display: flex;

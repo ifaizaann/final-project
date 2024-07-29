@@ -3,7 +3,7 @@ import "./ProductDisplay.css";
 import star_icon from "../Assets/star_icon.png";
 import star_dull_icon from "../Assets/star_dull_icon.png";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../../redux/reducers"; // Make sure this path is correct
+import { addToCart } from "../../redux/reducers"; 
 import { setProducts } from "../../redux/actions";
 
 const ProductDisplay = (props) => {
@@ -38,24 +38,14 @@ const ProductDisplay = (props) => {
           <div className="productdisplay-right-price-new">${product.new_price}</div>
         </div>
         <div className="productdisplay-right-description">
-          A lightweight, usually knitted, pullover shirt, close-fitting and with
-          a round neckline and short sleeves, worn as an undershirt or outer
-          garment.
+          Premium quality sunglasses that are durable and stylish
         </div>
-        <div className="productdisplay-right-size">
-          <h1>Select Size</h1>
-          <div className="productdisplay-right-sizes">
-            <div>S</div>
-            <div>M</div>
-            <div>L</div>
-            <div>XL</div>
-            <div>XXL</div>
-          </div>
-        </div>
+        <br/>
+       
         <button onClick={() => {dispatch(addToCart(product.id));
           dispatch(setProducts(product.id));
         }}>ADD TO CART</button>
-        <p className="productdisplay-right-category"><span>Category :</span> Women, T-shirt, Crop Top</p>
+        <p className="productdisplay-right-category"><span>Category :</span> Eyewear Sunglasses</p>
         <p className="productdisplay-right-category"><span>Tags :</span> Modern, Latest</p>
       </div>
     </div>
